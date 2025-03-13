@@ -37,15 +37,18 @@
             this.button_Encrypt = new System.Windows.Forms.Button();
             this.label_Tittle = new System.Windows.Forms.Label();
             this.textBox_Result = new System.Windows.Forms.TextBox();
+            this.button_checkKey = new System.Windows.Forms.Button();
+            this.textBox_checkKey = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox_Key
             // 
             this.textBox_Key.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Key.ForeColor = System.Drawing.Color.DarkOrange;
-            this.textBox_Key.Location = new System.Drawing.Point(200, 360);
+            this.textBox_Key.Location = new System.Drawing.Point(275, 362);
+            this.textBox_Key.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Key.Name = "textBox_Key";
-            this.textBox_Key.Size = new System.Drawing.Size(297, 34);
+            this.textBox_Key.Size = new System.Drawing.Size(407, 44);
             this.textBox_Key.TabIndex = 7;
             this.textBox_Key.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Key_KeyPress);
             // 
@@ -55,9 +58,10 @@
             this.label_Key.BackColor = System.Drawing.Color.LemonChiffon;
             this.label_Key.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Key.ForeColor = System.Drawing.Color.Peru;
-            this.label_Key.Location = new System.Drawing.Point(66, 362);
+            this.label_Key.Location = new System.Drawing.Point(91, 365);
+            this.label_Key.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Key.Name = "label_Key";
-            this.label_Key.Size = new System.Drawing.Size(62, 27);
+            this.label_Key.Size = new System.Drawing.Size(88, 38);
             this.label_Key.TabIndex = 6;
             this.label_Key.Text = "Key";
             // 
@@ -65,11 +69,12 @@
             // 
             this.textBox_Message.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Message.ForeColor = System.Drawing.Color.DarkOrange;
-            this.textBox_Message.Location = new System.Drawing.Point(200, 135);
+            this.textBox_Message.Location = new System.Drawing.Point(275, 202);
+            this.textBox_Message.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Message.Multiline = true;
             this.textBox_Message.Name = "textBox_Message";
             this.textBox_Message.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox_Message.Size = new System.Drawing.Size(297, 183);
+            this.textBox_Message.Size = new System.Drawing.Size(407, 135);
             this.textBox_Message.TabIndex = 5;
             // 
             // label_Message
@@ -78,9 +83,10 @@
             this.label_Message.BackColor = System.Drawing.Color.LemonChiffon;
             this.label_Message.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Message.ForeColor = System.Drawing.Color.Peru;
-            this.label_Message.Location = new System.Drawing.Point(66, 137);
+            this.label_Message.Location = new System.Drawing.Point(91, 206);
+            this.label_Message.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Message.Name = "label_Message";
-            this.label_Message.Size = new System.Drawing.Size(128, 27);
+            this.label_Message.Size = new System.Drawing.Size(179, 38);
             this.label_Message.TabIndex = 4;
             this.label_Message.Text = "Message";
             // 
@@ -90,9 +96,10 @@
             this.label_Result.BackColor = System.Drawing.Color.LemonChiffon;
             this.label_Result.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Result.ForeColor = System.Drawing.Color.Peru;
-            this.label_Result.Location = new System.Drawing.Point(540, 139);
+            this.label_Result.Location = new System.Drawing.Point(742, 208);
+            this.label_Result.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Result.Name = "label_Result";
-            this.label_Result.Size = new System.Drawing.Size(102, 27);
+            this.label_Result.Size = new System.Drawing.Size(142, 38);
             this.label_Result.TabIndex = 8;
             this.label_Result.Text = "Result";
             // 
@@ -107,12 +114,14 @@
             this.button_Decrypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Decrypt.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Decrypt.ForeColor = System.Drawing.Color.Peru;
-            this.button_Decrypt.Location = new System.Drawing.Point(354, 448);
+            this.button_Decrypt.Location = new System.Drawing.Point(485, 435);
+            this.button_Decrypt.Margin = new System.Windows.Forms.Padding(4);
             this.button_Decrypt.Name = "button_Decrypt";
-            this.button_Decrypt.Size = new System.Drawing.Size(143, 43);
+            this.button_Decrypt.Size = new System.Drawing.Size(197, 64);
             this.button_Decrypt.TabIndex = 32;
             this.button_Decrypt.Text = "Decrypt";
             this.button_Decrypt.UseVisualStyleBackColor = false;
+            this.button_Decrypt.Click += new System.EventHandler(this.button_Decrypt_Click);
             // 
             // button_Encrypt
             // 
@@ -125,12 +134,14 @@
             this.button_Encrypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Encrypt.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Encrypt.ForeColor = System.Drawing.Color.Peru;
-            this.button_Encrypt.Location = new System.Drawing.Point(71, 448);
+            this.button_Encrypt.Location = new System.Drawing.Point(275, 435);
+            this.button_Encrypt.Margin = new System.Windows.Forms.Padding(4);
             this.button_Encrypt.Name = "button_Encrypt";
-            this.button_Encrypt.Size = new System.Drawing.Size(143, 43);
+            this.button_Encrypt.Size = new System.Drawing.Size(197, 64);
             this.button_Encrypt.TabIndex = 31;
             this.button_Encrypt.Text = "Encrypt";
             this.button_Encrypt.UseVisualStyleBackColor = false;
+            this.button_Encrypt.Click += new System.EventHandler(this.button_Encrypt_Click);
             // 
             // label_Tittle
             // 
@@ -138,9 +149,10 @@
             this.label_Tittle.BackColor = System.Drawing.Color.LemonChiffon;
             this.label_Tittle.Font = new System.Drawing.Font("Ravie", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Tittle.ForeColor = System.Drawing.Color.Peru;
-            this.label_Tittle.Location = new System.Drawing.Point(186, 24);
+            this.label_Tittle.Location = new System.Drawing.Point(256, 36);
+            this.label_Tittle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Tittle.Name = "label_Tittle";
-            this.label_Tittle.Size = new System.Drawing.Size(652, 81);
+            this.label_Tittle.Size = new System.Drawing.Size(911, 111);
             this.label_Tittle.TabIndex = 33;
             this.label_Tittle.Text = "Cearsar Cipher";
             // 
@@ -148,19 +160,54 @@
             // 
             this.textBox_Result.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Result.ForeColor = System.Drawing.Color.DarkOrange;
-            this.textBox_Result.Location = new System.Drawing.Point(648, 135);
+            this.textBox_Result.Location = new System.Drawing.Point(891, 202);
+            this.textBox_Result.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Result.Multiline = true;
             this.textBox_Result.Name = "textBox_Result";
             this.textBox_Result.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox_Result.Size = new System.Drawing.Size(297, 183);
+            this.textBox_Result.Size = new System.Drawing.Size(407, 135);
             this.textBox_Result.TabIndex = 9;
+            // 
+            // button_checkKey
+            // 
+            this.button_checkKey.AutoSize = true;
+            this.button_checkKey.BackColor = System.Drawing.Color.LemonChiffon;
+            this.button_checkKey.FlatAppearance.BorderColor = System.Drawing.Color.Peru;
+            this.button_checkKey.FlatAppearance.BorderSize = 3;
+            this.button_checkKey.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCyan;
+            this.button_checkKey.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
+            this.button_checkKey.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_checkKey.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_checkKey.ForeColor = System.Drawing.Color.Peru;
+            this.button_checkKey.Location = new System.Drawing.Point(98, 537);
+            this.button_checkKey.Margin = new System.Windows.Forms.Padding(4);
+            this.button_checkKey.Name = "button_checkKey";
+            this.button_checkKey.Size = new System.Drawing.Size(219, 54);
+            this.button_checkKey.TabIndex = 34;
+            this.button_checkKey.Text = "Check key";
+            this.button_checkKey.UseVisualStyleBackColor = false;
+            this.button_checkKey.Click += new System.EventHandler(this.button_checkKey_Click);
+            // 
+            // textBox_checkKey
+            // 
+            this.textBox_checkKey.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_checkKey.ForeColor = System.Drawing.Color.DarkOrange;
+            this.textBox_checkKey.Location = new System.Drawing.Point(356, 537);
+            this.textBox_checkKey.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_checkKey.Multiline = true;
+            this.textBox_checkKey.Name = "textBox_checkKey";
+            this.textBox_checkKey.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox_checkKey.Size = new System.Drawing.Size(942, 255);
+            this.textBox_checkKey.TabIndex = 35;
             // 
             // Task2_1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(1007, 555);
+            this.ClientSize = new System.Drawing.Size(1385, 832);
+            this.Controls.Add(this.textBox_checkKey);
+            this.Controls.Add(this.button_checkKey);
             this.Controls.Add(this.label_Tittle);
             this.Controls.Add(this.button_Decrypt);
             this.Controls.Add(this.button_Encrypt);
@@ -170,7 +217,9 @@
             this.Controls.Add(this.label_Key);
             this.Controls.Add(this.textBox_Message);
             this.Controls.Add(this.label_Message);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Task2_1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Task2.1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -188,6 +237,8 @@
         private System.Windows.Forms.Button button_Encrypt;
         private System.Windows.Forms.Label label_Tittle;
         private System.Windows.Forms.TextBox textBox_Result;
+        private System.Windows.Forms.Button button_checkKey;
+        private System.Windows.Forms.TextBox textBox_checkKey;
     }
 }
 
