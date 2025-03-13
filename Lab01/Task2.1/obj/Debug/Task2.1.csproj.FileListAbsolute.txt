@@ -1,0 +1,10 @@
+D:\TH-ATM\Lab1\Lab01\Task2.1\bin\Debug\Task2.1.exe.config
+D:\TH-ATM\Lab1\Lab01\Task2.1\bin\Debug\Task2.1.exe
+D:\TH-ATM\Lab1\Lab01\Task2.1\bin\Debug\Task2.1.pdb
+D:\TH-ATM\Lab1\Lab01\Task2.1\obj\Debug\Task2.1.csproj.AssemblyReference.cache
+D:\TH-ATM\Lab1\Lab01\Task2.1\obj\Debug\Task2._1.Task2_1.resources
+D:\TH-ATM\Lab1\Lab01\Task2.1\obj\Debug\Task2._1.Properties.Resources.resources
+D:\TH-ATM\Lab1\Lab01\Task2.1\obj\Debug\Task2.1.csproj.GenerateResource.cache
+D:\TH-ATM\Lab1\Lab01\Task2.1\obj\Debug\Task2.1.csproj.CoreCompileInputs.cache
+D:\TH-ATM\Lab1\Lab01\Task2.1\obj\Debug\Task2.1.exe
+D:\TH-ATM\Lab1\Lab01\Task2.1\obj\Debug\Task2.1.pdb
